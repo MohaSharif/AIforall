@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>السرديّات الستة للذكاء الاصطناعي حتى 2030</title>
+  <!-- Google Fonts: Arabic-friendly -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      /* Color palette */
+      --bg:#0f1221;            /* deep navy */
+      --paper:#111428;         /* card background */
+      --ink:#e9ecf1;           /* light text */
+      --muted:#b8c1d1;         /* muted text */
+      --grid-gap:36px;
+      --radius:22px;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      /* Narrative colors */
+      --blue:#59b3ff;          /* progress */
+      --red:#ff5d5d;           /* threat */
+      --violet:#9b6dff;        /* digital colonialism */
+      --silver:#bfc6d6;        /* post-human */
+      --green:#66d19e;         /* ethics */
+      --orange:#ffb35c;        /* bias */
+      /* A4 @ 300dpi: 2480 x 3508 px  */
+      --w:2480px; 
+      --h:3508px;
+    }
+    html,body{background:var(--bg);color:var(--ink);margin:0;height:100%;}
+    body{font-family:"Cairo","Tajawal", system-ui, -apple-system, Segoe UI, Roboto, "Noto Sans", Arial, sans-serif;}
+
+    .wrap{max-width: min(95vw, 1400px); margin: 22px auto; padding: 0 16px;}
+
+    .toolbar{display:flex; gap:10px; flex-wrap:wrap; align-items:center; justify-content:flex-end; margin-bottom:10px}
+    .btn{background:#1b1f3a;color:var(--ink);border:1px solid #2a2f57;padding:10px 14px;border-radius:12px;cursor:pointer;box-shadow:var(--shadow);font-weight:700}
+    .btn:hover{filter:brightness(1.08)}
+    .hint{color:var(--muted); font-size:13px; margin:6px 0 14px; text-align:end}
+
+    /* Poster canvas (on-screen scale) */
+    .canvas-shell{display:flex; justify-content:center}
+    #poster{width: calc(var(--w) / 2.5); height: calc(var(--h) / 2.5); /* scale down for screen */
+            background: linear-gradient(180deg,#0f1221,#0c1020 40%, #0e1430 100%);
+            border-radius: 28px; box-shadow: var(--shadow); position: relative; padding: 56px; overflow:hidden}
+
+    /* Header */
+    .hdr{display:flex; align-items:baseline; justify-content:space-between; gap:24px; margin-bottom:36px}
+    .title{font-size:38px; font-weight:900; letter-spacing:.2px}
+    .subtitle{font-size:18px; color:var(--muted); font-weight:700}
+    .survey{font-size:32px; font-weight:900; color:var(--orange); text-decoration:none; border:2px solid var(--orange); border-radius:16px; padding:10px 16px; line-height:1; display:inline-flex; align-items:center; gap:8px; transition:all .2s ease}
+    .survey:hover, .survey:focus-visible{background:var(--orange); color:#0f1221; transform:translateY(-1px)}
+
+    /* Grid 2x3 */
+    .grid{display:grid; grid-template-columns: repeat(3, 1fr); gap:var(--grid-gap)}
+    .card{background:var(--paper); border:1px solid #1f2443; border-radius: var(--radius); padding:26px 26px 22px; display:flex; flex-direction:column; gap:14px; box-shadow: var(--shadow); position:relative}
+    .tag{display:inline-flex; align-items:center; gap:8px; font-weight:900; font-size:18px; letter-spacing:.3px}
+    .tag .dot{width:12px;height:12px;border-radius:50%}
+    .lead{font-size:17px; color:var(--ink); font-weight:800}
+    .bullets{margin:0; padding-inline-start:20px; color:var(--muted); line-height:1.5; font-size:15px}
+
+    /* Rating (interactive) */
+    .rating{display:flex; align-items:center; gap:10px; margin-top:auto}
+    .stars{display:flex; gap:6px}
+    .star{all:unset; display:inline-block; width:18px;height:18px; border-radius:50%; outline:1px solid rgba(255,255,255,.25); cursor:pointer}
+    .star.f{background:currentColor}
+    .star:focus-visible{outline:2px solid #fff; outline-offset:2px}
+    .score{font-size:13px; color:var(--muted); font-weight:800}
+    .rate-hint{font-size:12px; color:var(--muted)}
+
+    /* Tagline */
+    .tagline{font-size:42px; font-weight:900; color:var(--ink); text-align:center; margin-top:80px; margin-bottom:0; opacity:.97}
+
+    /* Print to PDF (A4) */ (A4) */
+    @media print{
+      body{background:white}
+      .wrap, .toolbar{display:none}
+      #poster{width: var(--w); height: var(--h); border-radius:0; padding:120px}
+      .title{font-size:84px}
+      .subtitle{font-size:30px}
+      .grid{gap:52px}
+      .card{padding:48px}
+      .lead{font-size:34px}
+      .bullets{font-size:26px}
+      .tag{font-size:32px}
+      .footer{bottom:80px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" aria-hidden="false">
+    <div class="toolbar" role="group" aria-label="أزرار الأدوات">
+      <button class="btn" id="btnPng">تحميل كصورة PNG عالية الدقة</button>
+      <button class="btn" id="btnPdf">طباعة / حفظ PDF (A4)</button>
+      <button class="btn" id="btnDark">تبديل الخلفية</button>
+      <button class="btn" id="btnReset">إعادة ضبط التقييمات</button>
+      <button class="btn" id="btnShare">نسخ رابط مشارَكة التقييم</button>
+    </div>
+    <div class="hint">💡 انقر على الدوائر داخل كل مربع لاختيار <strong>درجة التحقق (1–5)</strong>. يتم حفظ تقييمك محليًا ويمكنك مشاركته كرابط.</div>
+  </div>
+
+  <!-- Poster Canvas -->
+  <div class="canvas-shell">
+    <section id="poster" aria-label="بوستر السرديات الستة للذكاء الاصطناعي">
+      <header class="hdr">
+        <div>
+          <div class="title">السرديّات الستة للذكاء الاصطناعي حتى 2030</div>
+          <div class="subtitle">AI Narratives · 2025 → 2030</div>
+        </div>
+        <a class="survey" href="https://forms.gle/Rg4j1s2wSPiFwM6U7" target="_blank" rel="noopener">📝 استبيان</a>
+      </header>
+
+      <main class="grid" id="grid">
+        <!-- 1. التقدّم والتمكين -->
+        <article class="card" style="--accent:var(--blue); color:var(--blue)">
+          <div class="tag"><span class="dot" style="background:var(--blue)"></span>💡 التقدّم والتمكين</div>
+          <div class="lead" style="color:var(--ink)">الذكاء الاصطناعي محرّك للتطور والفرص الجديدة.</div>
+          <ul class="bullets">
+            <li>حلول في الطب والتعليم والإنتاجية.</li>
+            <li>خلق وظائف جديدة تعوّض ما يتلاشى.</li>
+            <li>نمو اقتصادي متوقع: 15.7 تريليون دولار بحلول 2030.</li>
+          </ul>
+          <div class="rating" data-key="progress" data-default="5" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">5</b>/5</span>
+            <div class="stars" style="color:var(--blue)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+
+        <!-- 2. الاستبدال والتهديد -->
+        <article class="card" style="--accent:var(--red); color:var(--red)">
+          <div class="tag"><span class="dot" style="background:var(--red)"></span>⚠️ الاستبدال والتهديد</div>
+          <div class="lead" style="color:var(--ink)">إحلال الآلات محل الوظائف وتهديد السيطرة البشرية.</div>
+          <ul class="bullets">
+            <li>بطالة تقنية في النقل والتجزئة.</li>
+            <li>مخاطر فقدان السيطرة على الأنظمة الذاتية.</li>
+            <li>سباق تسلّح تقني بمآلات كارثية محتملة.</li>
+          </ul>
+          <div class="rating" data-key="threat" data-default="4" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">4</b>/5</span>
+            <div class="stars" style="color:var(--red)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+
+        <!-- 3. الاستعمار الرقمي -->
+        <article class="card" style="--accent:var(--violet); color:var(--violet)">
+          <div class="tag"><span class="dot" style="background:var(--violet)"></span>🌐 الاستعمار الرقمي</div>
+          <div class="lead" style="color:var(--ink)">احتكار دول/شركات للتقنيات الأساسية وتعميق الفجوات.</div>
+          <ul class="bullets">
+            <li>استخراج بيانات وعمالة من الدول النامية.</li>
+            <li>فرض قيم ثقافية عبر الخوارزميات والمنصّات.</li>
+            <li>هيمنة سلاسل القيمة في العتاد والسحاب والنماذج.</li>
+          </ul>
+          <div class="rating" data-key="colonialism" data-default="5" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">5</b>/5</span>
+            <div class="stars" style="color:var(--violet)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+
+        <!-- 4. ما بعد الإنسانية -->
+        <article class="card" style="--accent:var(--silver); color:var(--silver)">
+          <div class="tag"><span class="dot" style="background:var(--silver)"></span>🤖 ما بعد الإنسانيّة</div>
+          <div class="lead" style="color:var(--ink)">جسر إلى ما بعد حدود البشر والقدرات الطبيعية.</div>
+          <ul class="bullets">
+            <li>ذكاء عام/فائق وواجهات دماغ–حاسوب.</li>
+            <li>زراعات دماغية وتعزيز القدرات البشرية.</li>
+            <li>احتمالات اندماج/خلود تقني ما تزال بعيدة.</li>
+          </ul>
+          <div class="rating" data-key="posthuman" data-default="2" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">2</b>/5</span>
+            <div class="stars" style="color:var(--silver)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+
+        <!-- 5. السردية الأخلاقية -->
+        <article class="card" style="--accent:var(--green); color:var(--green)">
+          <div class="tag"><span class="dot" style="background:var(--green)"></span>⚖️ السرديّة الأخلاقية</div>
+          <div class="lead" style="color:var(--ink)">ضبط التطوير بالتشريعات والمعايير والمسائلة.</div>
+          <ul class="bullets">
+            <li>قوانين كـ "قانون الاتحاد الأوروبي للذكاء الاصطناعي".</li>
+            <li>معايير الشفافية وتقليل الانحياز.</li>
+            <li>وعي عام متصاعد يضغط نحو التنظيم.</li>
+          </ul>
+          <div class="rating" data-key="ethics" data-default="5" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">5</b>/5</span>
+            <div class="stars" style="color:var(--green)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+
+        <!-- 6. المرآة والتحيّز -->
+        <article class="card" style="--accent:var(--orange); color:var(--orange)">
+          <div class="tag"><span class="dot" style="background:var(--orange)"></span>🪞 المرآة والتحيّز</div>
+          <div class="lead" style="color:var(--ink)">الذكاء الاصطناعي يعكس تحيّزات المجتمع ومظالمه.</div>
+          <ul class="bullets">
+            <li>تمييز عِرقي وجندري في التوظيف والعدالة والصحّة.</li>
+            <li>تعزيز فقاعات المعلومات والانقسامات الاجتماعية.</li>
+            <li>الإصلاح التقني مرتبط بإصلاح اجتماعي أوسع.</li>
+          </ul>
+          <div class="rating" data-key="bias" data-default="5" aria-label="اختر درجة التحقق لهذا المحور">
+            <span class="score">درجة التحقق: <b class="val">5</b>/5</span>
+            <div class="stars" style="color:var(--orange)">
+              <button class="star" aria-label="1"></button>
+              <button class="star" aria-label="2"></button>
+              <button class="star" aria-label="3"></button>
+              <button class="star" aria-label="4"></button>
+              <button class="star" aria-label="5"></button>
+            </div>
+            <span class="rate-hint">انقر للتقييم</span>
+          </div>
+        </article>
+      </main>
+
+      <!-- Footer timeline & tagline -->
+      <div class="tagline">المستقبل ليس حتميًا… سرديّاتنا هي التي تُشكّله.</div>
+    </section>
+  </div>
+
+  <!-- html2canvas for PNG export -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    const poster = document.getElementById('poster');
+    const btnPng = document.getElementById('btnPng');
+    const btnPdf = document.getElementById('btnPdf');
+    const btnDark = document.getElementById('btnDark');
+    const btnReset = document.getElementById('btnReset');
+    const btnShare = document.getElementById('btnShare');
+
+    const KEYS = ['progress','threat','colonialism','posthuman','ethics','bias'];
+    let ratings = {progress:5, threat:4, colonialism:5, posthuman:2, ethics:5, bias:5};
+
+    // Parse from URL (?r=5-4-5-2-5-5)
+    const params = new URLSearchParams(location.search);
+    const fromUrl = params.get('r');
+    if (fromUrl) {
+      const vals = fromUrl.split('-').map(v=>Math.max(0, Math.min(5, parseInt(v,10)||0)));
+      if (vals.length === 6) {
+        KEYS.forEach((k,i)=> ratings[k]= vals[i]);
+      }
+    } else {
+      // Load saved from localStorage
+      try {
+        const saved = JSON.parse(localStorage.getItem('aiNarrativesRatings')||'null');
+        if (saved) ratings = {...ratings, ...saved};
+      } catch(e){}
+    }
+
+    function applyRating(container, val){
+      const stars = container.querySelectorAll('.star');
+      stars.forEach((s,i)=> s.classList.toggle('f', i < val));
+      const valEl = container.querySelector('.val');
+      if (valEl) valEl.textContent = String(val);
+    }
+
+    function persist(){
+      try { localStorage.setItem('aiNarrativesRatings', JSON.stringify(ratings)); } catch(e){}
+      updateShareLink();
+    }
+
+    function updateShareLink(){
+      const seq = KEYS.map(k=> ratings[k] ?? 0).join('-');
+      const shareUrl = new URL(location.href);
+      shareUrl.searchParams.set('r', seq);
+      btnShare.dataset.href = shareUrl.toString();
+    }
+
+    // Initialize all rating widgets
+    document.querySelectorAll('.rating').forEach(container=>{
+      const key = container.dataset.key;
+      const def = parseInt(container.dataset.default||'0',10);
+      const current = ratings[key] ?? def;
+      applyRating(container, current);
+      const stars = container.querySelectorAll('.star');
+      stars.forEach((btn, idx)=>{
+        btn.addEventListener('click', ()=>{
+          ratings[key] = idx+1; applyRating(container, idx+1); persist();
+        });
+        btn.addEventListener('keydown', (e)=>{
+          if (e.key>='1' && e.key<='5'){ const v = parseInt(e.key,10); ratings[key]=v; applyRating(container, v); persist(); }
+        })
+      });
+    });
+
+    // Toolbar actions
+    let alt=false;
+    btnDark.addEventListener('click', ()=>{
+      alt=!alt;
+      poster.style.background = alt
+        ? 'linear-gradient(180deg,#12152b,#0e1230 60%, #16204a 100%)'
+        : 'linear-gradient(180deg,#0f1221,#0c1020 40%, #0e1430 100%)';
+    });
+
+    btnReset.addEventListener('click', ()=>{
+      document.querySelectorAll('.rating').forEach(container=>{
+        const def = parseInt(container.dataset.default||'0',10);
+        const key = container.dataset.key;
+        ratings[key] = def; applyRating(container, def);
+      });
+      persist();
+    });
+
+    btnShare.addEventListener('click', async ()=>{
+      updateShareLink();
+      const url = btnShare.dataset.href;
+      try{ await navigator.clipboard.writeText(url); btnShare.textContent = 'تم نسخ رابط المشاركة ✅'; setTimeout(()=> btnShare.textContent='نسخ رابط مشارَكة التقييم', 1600);}catch(e){
+        // Fallback: open prompt
+        window.prompt('انسخ الرابط التالي:', url);
+      }
+    });
+
+    btnPng.addEventListener('click', async ()=>{
+      // Temporarily render at full A4 resolution for crisp export
+      const prevW = poster.style.width, prevH = poster.style.height, prevPad = poster.style.padding;
+      poster.style.width = getComputedStyle(document.documentElement).getPropertyValue('--w');
+      poster.style.height = getComputedStyle(document.documentElement).getPropertyValue('--h');
+      poster.style.padding = '120px';
+
+      await new Promise(r=>setTimeout(r, 100));
+      html2canvas(poster, {
+        scale: 1, /* already rendering at full size */
+        backgroundColor: null,
+        useCORS: true,
+        allowTaint: true,
+        windowWidth: poster.offsetWidth,
+        windowHeight: poster.offsetHeight,
+        logging: false
+      }).then(canvas=>{
+        const link = document.createElement('a');
+        link.download = 'AI-Narratives-2030-ar.png';
+        link.href = canvas.toDataURL('image/png');
+        link.click();
+      }).finally(()=>{
+        // restore scaled view
+        poster.style.width = prevW; poster.style.height = prevH; poster.style.padding = prevPad;
+      });
+    });
+
+    btnPdf.addEventListener('click', ()=>{
+      window.print();
+    });
+
+    // Prepare initial share link on load
+    updateShareLink();
+  </script>
+</body>
+</html>
