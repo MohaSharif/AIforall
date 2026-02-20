@@ -1,0 +1,1282 @@
+[
+  {
+    "id": "HAL_001",
+    "family": "alkyl_halide",
+    "display_formula": "CH3F",
+    "name_ar": "فلورو ميثان",
+    "name_en": "fluoromethane",
+    "chain_carbons": 1,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_002",
+    "family": "alkyl_halide",
+    "display_formula": "CH3Cl",
+    "name_ar": "كلورو ميثان",
+    "name_en": "chloromethane",
+    "chain_carbons": 1,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_003",
+    "family": "alkyl_halide",
+    "display_formula": "CH3Br",
+    "name_ar": "برومو ميثان",
+    "name_en": "bromomethane",
+    "chain_carbons": 1,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_004",
+    "family": "alkyl_halide",
+    "display_formula": "CH3I",
+    "name_ar": "يودو ميثان",
+    "name_en": "iodomethane",
+    "chain_carbons": 1,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_005",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2Cl",
+    "name_ar": "كلورو إيثان",
+    "name_en": "chloroethane",
+    "chain_carbons": 2,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_006",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2Br",
+    "name_ar": "برومو إيثان",
+    "name_en": "bromoethane",
+    "chain_carbons": 2,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_007",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2F",
+    "name_ar": "فلورو إيثان",
+    "name_en": "fluoroethane",
+    "chain_carbons": 2,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_008",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2I",
+    "name_ar": "يودو إيثان",
+    "name_en": "iodoethane",
+    "chain_carbons": 2,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "low"
+    }
+  },
+  {
+    "id": "HAL_009",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2Cl",
+    "name_ar": "1-كلورو بروبان",
+    "name_en": "1-chloropropane",
+    "chain_carbons": 3,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_010",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CHClCH3",
+    "name_ar": "2-كلورو بروبان",
+    "name_en": "2-chloropropane",
+    "chain_carbons": 3,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_011",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2Br",
+    "name_ar": "1-برومو بروبان",
+    "name_en": "1-bromopropane",
+    "chain_carbons": 3,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_012",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2CH2Cl",
+    "name_ar": "1-كلورو بيوتان",
+    "name_en": "1-chlorobutane",
+    "chain_carbons": 4,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_013",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CHClCH2CH3",
+    "name_ar": "2-كلورو بيوتان",
+    "name_en": "2-chlorobutane",
+    "chain_carbons": 4,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_014",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2CH2Br",
+    "name_ar": "1-برومو بيوتان",
+    "name_en": "1-bromobutane",
+    "chain_carbons": 4,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "HAL_015",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2CH2CH2Cl",
+    "name_ar": "1-كلورو بنتان",
+    "name_en": "1-chloropentane",
+    "chain_carbons": 5,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "HAL_016",
+    "family": "alkyl_halide",
+    "display_formula": "CH3CH2CH2CH2CH2Br",
+    "name_ar": "1-برومو بنتان",
+    "name_en": "1-bromopentane",
+    "chain_carbons": 5,
+    "functional_group": "X",
+    "notes_ar": "هاليد ألكيل قطبيته محدودة ولا يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_001",
+    "family": "alcohol",
+    "display_formula": "CH3OH",
+    "name_ar": "ميثانول",
+    "name_en": "methanol",
+    "chain_carbons": 1,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "ALC_002",
+    "family": "alcohol",
+    "display_formula": "CH3CH2OH",
+    "name_ar": "إيثانول",
+    "name_en": "ethanol",
+    "chain_carbons": 2,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "ALC_003",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CH2OH",
+    "name_ar": "1-بروبانول",
+    "name_en": "1-propanol",
+    "chain_carbons": 3,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_004",
+    "family": "alcohol",
+    "display_formula": "CH3CHOHCH3",
+    "name_ar": "2-بروبانول",
+    "name_en": "2-propanol",
+    "chain_carbons": 3,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_005",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CH2CH2OH",
+    "name_ar": "1-بيوتانول",
+    "name_en": "1-butanol",
+    "chain_carbons": 4,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_006",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CHOHCH3",
+    "name_ar": "2-بيوتانول",
+    "name_en": "2-butanol",
+    "chain_carbons": 4,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_007",
+    "family": "alcohol",
+    "display_formula": "(CH3)3COH",
+    "name_ar": "tert-بيوتانول",
+    "name_en": "tert-butanol",
+    "chain_carbons": 4,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثالثي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_008",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CH2CH2CH2OH",
+    "name_ar": "1-بنتانول",
+    "name_en": "1-pentanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_009",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CH2CHOHCH3",
+    "name_ar": "2-بنتانول",
+    "name_en": "2-pentanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_010",
+    "family": "alcohol",
+    "display_formula": "CH3CH(CH3)CH2OH",
+    "name_ar": "2-ميثيل-1-بروبانول",
+    "name_en": "2-methyl-1-propanol",
+    "chain_carbons": 4,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_011",
+    "family": "alcohol",
+    "display_formula": "(CH3)2CHCH2OH",
+    "name_ar": "أيزوبيوتانول",
+    "name_en": "isobutanol",
+    "chain_carbons": 4,
+    "functional_group": "OH",
+    "notes_ar": "كحول أولي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_012",
+    "family": "alcohol",
+    "display_formula": "(CH3)2CHOH",
+    "name_ar": "أيزوبروبانول",
+    "name_en": "isopropanol",
+    "chain_carbons": 3,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_013",
+    "family": "alcohol",
+    "display_formula": "CH3C(OH)(CH3)CH2CH3",
+    "name_ar": "2-ميثيل-2-بيوتانول",
+    "name_en": "2-methyl-2-butanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثالثي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_014",
+    "family": "alcohol",
+    "display_formula": "CH3CH(OH)CH2CH2CH3",
+    "name_ar": "2-بنتانول",
+    "name_en": "2-pentanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_015",
+    "family": "alcohol",
+    "display_formula": "CH3CH2CH(OH)CH2CH3",
+    "name_ar": "3-بنتانول",
+    "name_en": "3-pentanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثانوي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALC_016",
+    "family": "alcohol",
+    "display_formula": "CH3CH2C(OH)(CH3)CH3",
+    "name_ar": "2-ميثيل-2-بيوتانول",
+    "name_en": "2-methyl-2-butanol",
+    "chain_carbons": 5,
+    "functional_group": "OH",
+    "notes_ar": "كحول ثالثي، يكوّن روابط هيدروجينية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_001",
+    "family": "aldehyde",
+    "display_formula": "HCHO",
+    "name_ar": "ميثانال",
+    "name_en": "methanal",
+    "chain_carbons": 1,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "ALD_002",
+    "family": "aldehyde",
+    "display_formula": "CH3CHO",
+    "name_ar": "إيثانال",
+    "name_en": "ethanal",
+    "chain_carbons": 2,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "ALD_003",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CHO",
+    "name_ar": "بروبانال",
+    "name_en": "propanal",
+    "chain_carbons": 3,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "ALD_004",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH2CHO",
+    "name_ar": "بيوتانال",
+    "name_en": "butanal",
+    "chain_carbons": 4,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_005",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH2CH2CHO",
+    "name_ar": "بنتانال",
+    "name_en": "pentanal",
+    "chain_carbons": 5,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_006",
+    "family": "aldehyde",
+    "display_formula": "CH3(CH2)4CHO",
+    "name_ar": "هكسانال",
+    "name_en": "hexanal",
+    "chain_carbons": 6,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_007",
+    "family": "aldehyde",
+    "display_formula": "(CH3)2CHCHO",
+    "name_ar": "2-ميثيل بروبانال",
+    "name_en": "2-methylpropanal",
+    "chain_carbons": 4,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_008",
+    "family": "aldehyde",
+    "display_formula": "CH3CH(CH3)CH2CHO",
+    "name_ar": "3-ميثيل بيوتانال",
+    "name_en": "3-methylbutanal",
+    "chain_carbons": 5,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_009",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH(CH3)CHO",
+    "name_ar": "2-ميثيل بيوتانال",
+    "name_en": "2-methylbutanal",
+    "chain_carbons": 5,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_010",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH2CH(CH3)CHO",
+    "name_ar": "2-ميثيل بنتانال",
+    "name_en": "2-methylpentanal",
+    "chain_carbons": 6,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_011",
+    "family": "aldehyde",
+    "display_formula": "CH3CH(CH3)CH(CH3)CHO",
+    "name_ar": "2,3-ثنائي ميثيل بيوتانال",
+    "name_en": "2,3-dimethylbutanal",
+    "chain_carbons": 6,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_012",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2C(CH3)2CHO",
+    "name_ar": "2,2-ثنائي ميثيل بيوتانال",
+    "name_en": "2,2-dimethylbutanal",
+    "chain_carbons": 6,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_013",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH2CH2CH(CH3)CHO",
+    "name_ar": "2-ميثيل هكسانال",
+    "name_en": "2-methylhexanal",
+    "chain_carbons": 7,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_014",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH(CH3)CH2CHO",
+    "name_ar": "3-ميثيل بنتانال",
+    "name_en": "3-methylpentanal",
+    "chain_carbons": 6,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_015",
+    "family": "aldehyde",
+    "display_formula": "CH3CH(CH2CH3)CHO",
+    "name_ar": "2-إيثيل بروبانال",
+    "name_en": "2-ethylpropanal",
+    "chain_carbons": 5,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ALD_016",
+    "family": "aldehyde",
+    "display_formula": "CH3CH2CH2CH2CH2CHO",
+    "name_ar": "هيبتانال",
+    "name_en": "heptanal",
+    "chain_carbons": 7,
+    "functional_group": "CHO",
+    "notes_ar": "ألدهيد طرفي (مجموعة –CHO) قطبي ولا يكوّن روابط هيدروجينية بين جزيئاته.",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_001",
+    "family": "ketone",
+    "display_formula": "CH3COCH3",
+    "name_ar": "بروبانون",
+    "name_en": "propanone",
+    "chain_carbons": 3,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "KET_002",
+    "family": "ketone",
+    "display_formula": "CH3COCH2CH3",
+    "name_ar": "2-بيوتانون",
+    "name_en": "2-butanone",
+    "chain_carbons": 4,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "KET_003",
+    "family": "ketone",
+    "display_formula": "CH3CH2COCH3",
+    "name_ar": "2-بيوتانون",
+    "name_en": "2-butanone",
+    "chain_carbons": 4,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "high",
+      "bp_relative": "medium"
+    }
+  },
+  {
+    "id": "KET_004",
+    "family": "ketone",
+    "display_formula": "CH3COCH2CH2CH3",
+    "name_ar": "2-بنتانون",
+    "name_en": "2-pentanone",
+    "chain_carbons": 5,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_005",
+    "family": "ketone",
+    "display_formula": "CH3CH2COCH2CH3",
+    "name_ar": "3-بنتانون",
+    "name_en": "3-pentanone",
+    "chain_carbons": 5,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_006",
+    "family": "ketone",
+    "display_formula": "CH3COCH2CH2CH2CH3",
+    "name_ar": "2-هكسانون",
+    "name_en": "2-hexanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_007",
+    "family": "ketone",
+    "display_formula": "CH3CH2COCH2CH2CH3",
+    "name_ar": "3-هكسانون",
+    "name_en": "3-hexanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_008",
+    "family": "ketone",
+    "display_formula": "CH3CH2CH2COCH2CH3",
+    "name_ar": "3-هكسانون",
+    "name_en": "3-hexanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_009",
+    "family": "ketone",
+    "display_formula": "CH3COCH(CH3)CH3",
+    "name_ar": "3-ميثيل-2-بيوتانون",
+    "name_en": "3-methyl-2-butanone",
+    "chain_carbons": 5,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_010",
+    "family": "ketone",
+    "display_formula": "CH3CH(CH3)COCH3",
+    "name_ar": "3-ميثيل-2-بيوتانون",
+    "name_en": "3-methyl-2-butanone",
+    "chain_carbons": 5,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_011",
+    "family": "ketone",
+    "display_formula": "CH3COCH(CH3)CH2CH3",
+    "name_ar": "3-ميثيل-2-بنتانون",
+    "name_en": "3-methyl-2-pentanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_012",
+    "family": "ketone",
+    "display_formula": "CH3CH2COCH(CH3)CH3",
+    "name_ar": "4-ميثيل-3-بنتانون",
+    "name_en": "4-methyl-3-pentanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_013",
+    "family": "ketone",
+    "display_formula": "CH3CH(CH3)COCH2CH3",
+    "name_ar": "2-ميثيل-3-بنتانون",
+    "name_en": "2-methyl-3-pentanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_014",
+    "family": "ketone",
+    "display_formula": "CH3COC(CH3)2CH3",
+    "name_ar": "3,3-ثنائي ميثيل-2-بيوتانون",
+    "name_en": "3,3-dimethyl-2-butanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_015",
+    "family": "ketone",
+    "display_formula": "CH3CH2CH2COCH3",
+    "name_ar": "2-بنتانون",
+    "name_en": "2-pentanone",
+    "chain_carbons": 5,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "KET_016",
+    "family": "ketone",
+    "display_formula": "CH3CH2CH2COCH2CH3",
+    "name_ar": "3-هكسانون",
+    "name_en": "3-hexanone",
+    "chain_carbons": 6,
+    "functional_group": "C=O",
+    "notes_ar": "كيتون يحوي مجموعة كربونيل داخلية (غير طرفية).",
+    "property_tags": {
+      "polarity": "medium",
+      "hbond": false,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_001",
+    "family": "carboxylic_acid",
+    "display_formula": "HCOOH",
+    "name_ar": "حمض الفورميك",
+    "name_en": "formic acid",
+    "chain_carbons": 1,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_002",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3COOH",
+    "name_ar": "حمض الأسيتيك",
+    "name_en": "acetic acid",
+    "chain_carbons": 2,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_003",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2COOH",
+    "name_ar": "حمض البروبيونيك",
+    "name_en": "propionic acid",
+    "chain_carbons": 3,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "high",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_004",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH2COOH",
+    "name_ar": "حمض البيوتيريك",
+    "name_en": "butyric acid",
+    "chain_carbons": 4,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_005",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3(CH2)3COOH",
+    "name_ar": "حمض البنتانويك",
+    "name_en": "pentanoic acid",
+    "chain_carbons": 5,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_006",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3(CH2)4COOH",
+    "name_ar": "حمض الهكسانويك",
+    "name_en": "hexanoic acid",
+    "chain_carbons": 6,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_007",
+    "family": "carboxylic_acid",
+    "display_formula": "(CH3)2CHCOOH",
+    "name_ar": "حمض 2-ميثيل بروبانويك",
+    "name_en": "2-methylpropanoic acid",
+    "chain_carbons": 4,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_008",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH(CH3)CH2COOH",
+    "name_ar": "حمض 3-ميثيل بيوتانويك",
+    "name_en": "3-methylbutanoic acid",
+    "chain_carbons": 5,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_009",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH(CH3)COOH",
+    "name_ar": "حمض 2-ميثيل بيوتانويك",
+    "name_en": "2-methylbutanoic acid",
+    "chain_carbons": 5,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_010",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH2CH(CH3)COOH",
+    "name_ar": "حمض 2-ميثيل بنتانويك",
+    "name_en": "2-methylpentanoic acid",
+    "chain_carbons": 6,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_011",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH(CH3)CH(CH3)COOH",
+    "name_ar": "حمض 2,3-ثنائي ميثيل بيوتانويك",
+    "name_en": "2,3-dimethylbutanoic acid",
+    "chain_carbons": 6,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_012",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2C(CH3)2COOH",
+    "name_ar": "حمض 2,2-ثنائي ميثيل بيوتانويك",
+    "name_en": "2,2-dimethylbutanoic acid",
+    "chain_carbons": 6,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_013",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH2CH2CH2COOH",
+    "name_ar": "حمض الهيبتانويك",
+    "name_en": "heptanoic acid",
+    "chain_carbons": 7,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_014",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH2CH2COOH",
+    "name_ar": "حمض البنتانويك",
+    "name_en": "pentanoic acid",
+    "chain_carbons": 5,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_015",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH(CH2CH3)COOH",
+    "name_ar": "حمض 2-إيثيل بروبانويك",
+    "name_en": "2-ethylpropanoic acid",
+    "chain_carbons": 5,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "medium",
+      "bp_relative": "high"
+    }
+  },
+  {
+    "id": "ACD_016",
+    "family": "carboxylic_acid",
+    "display_formula": "CH3CH2CH2CH2CH(CH3)COOH",
+    "name_ar": "حمض 2-ميثيل هكسانويك",
+    "name_en": "2-methylhexanoic acid",
+    "chain_carbons": 7,
+    "functional_group": "COOH",
+    "notes_ar": "حمض كربوكسيلي؛ شديد القطبية ويكوّن روابط هيدروجينية قوية.",
+    "property_tags": {
+      "polarity": "high",
+      "hbond": true,
+      "water_solubility": "low",
+      "bp_relative": "high"
+    }
+  }
+]
